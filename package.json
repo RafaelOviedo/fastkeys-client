@@ -1,0 +1,11 @@
+{
+  "name": "fastkeys-client",
+  "version": "1.0.0",
+  "description": "Front end app with html and vanilla js for Fastkeys e-commerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael Oviedo",
+  "license": "ISC",
+}
