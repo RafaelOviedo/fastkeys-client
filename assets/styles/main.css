@@ -60,7 +60,7 @@ body {
   width: 36px;
   height: 32px;
   border-radius: 5px;
-  background-color: #101318;
+  background-color: #172623;
 }
 .burger-line {
   width: 18px;
@@ -74,7 +74,7 @@ body {
   width: 36px;
   height: 32px;
   border-radius: 5px;
-  background-color: #091413;
+  background-color: #172623;
 }
 .cart-container {
   position: relative;
@@ -113,7 +113,7 @@ body {
   align-items: center;
   gap: 96px;
   height: 34px;
-  background-color: #171B26;
+  background-color: #408A71;
   border-bottom: 1px solid #2B303B;
   padding: 12px;
 }
@@ -123,7 +123,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 25px;
-  background-color: #171B26;
+  background-color: #408A71;
   border-bottom: 1px solid #2B303B;
   padding: 12px;
   padding-left: 30px;
@@ -139,7 +139,7 @@ body {
   width: 36px;
   height: 32px;
   border-radius: 5px;
-  background-color: #101318;
+  background-color: #172623;
   margin-right: 10px;
 }
 .close-button {
