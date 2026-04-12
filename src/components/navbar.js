@@ -6,7 +6,7 @@ export class Navbar extends HTMLElement {
     this.innerHTML = `
       <nav class="navbar">
         <div class="logo-container">
-          <img class="keyboard-image" src="../../assets/images/keyboard-image.png" />
+          <img class="keyboard-image" src="../../assets/images/keyboard-icon-green.png" />
           <a class="logo-text" href="../../index.html">FastKeys</a>
         </div>
 
@@ -47,7 +47,7 @@ export class Navbar extends HTMLElement {
       <nav class="opened-navbar-container">
         <nav class="opened-navbar">
           <div class="logo-container">
-            <img class="keyboard-image" src="../../assets/images/keyboard-image.png" />
+            <img class="keyboard-image" src="../../assets/images/keyboard-icon-green.png" />
             <a class="logo-text" href="../../index.html">FastKeys</a>
           </div>
 

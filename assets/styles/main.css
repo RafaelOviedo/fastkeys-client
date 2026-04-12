@@ -16,7 +16,7 @@ body {
   align-items: center;
   gap: 96px;
   height: 34px;
-  background-color: #171B26;
+  background-color: #408A71;
   border-bottom: 1px solid #2B303B;
   padding: 12px;
 }
@@ -30,14 +30,14 @@ body {
   height: 27px;
 }
 .keyboard-image {
-  width: 35px;
+  width: 50px;
   height: 30px;
 }
 .logo-text {
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  color: #8347EB;
+  color: #B0E4CC;
 }
 .navbar-options-menu-desktop {
   display: none;
@@ -74,7 +74,7 @@ body {
   width: 36px;
   height: 32px;
   border-radius: 5px;
-  background-color: #101318;
+  background-color: #091413;
 }
 .cart-container {
   position: relative;
@@ -159,7 +159,7 @@ body {
   height: 500px;
   margin-top: 20px;
   border-top: 1px solid #2B303B;
-  background-color: #171B26;
+  background-color: #408A71;
   gap: 16px;
   padding: 36px 16px;
 }
@@ -198,7 +198,7 @@ body {
 
 .products-text {
   font-size: 20px;
-  color: #FFF;
+  color: #B0E4CC;
   font-weight: bold;
 }
 
@@ -228,7 +228,7 @@ body {
 .go-to-admin-panel {
   text-align: center;
   font-size: 16px;
-  color: #8347EB;
+  color: #B0E4CC;
   text-decoration: underline;
 }
 

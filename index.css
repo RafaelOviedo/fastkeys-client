@@ -1,8 +1,8 @@
 .body {
   padding: 0;
   margin: 0;
-  color: #8347EB;
-  background-color: #101318;
+  color: #B0E4CC;
+  background-color: #091413;
 }
 
 .hero-section {
@@ -30,7 +30,7 @@
   width: 287px;
   font-size: 16px;
   text-align: center;
-  color: #A6A6A6;
+  color: #B0E4CC;
 }
 .pill-component {
   display: flex;
@@ -39,8 +39,8 @@
   width: 224px;
   height: 40px;
   border-radius: 50px;
-  border: 1px solid #8347EB;
-  background-color: rgba(131, 71, 235, 0.2);
+  border: 1px solid #B0E4CC;
+  background-color: rgba(64, 138, 113, 0.2);
 }
 .pill-text {
   font-weight: bold;
@@ -50,7 +50,7 @@
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
-  color: #8347EB;
+  color: #B0E4CC;
 }
 
 .results-title-container {
@@ -79,7 +79,7 @@
 }
 .product-card-component:hover {
   scale: 1.02;
-  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 15px rgba(64, 138, 113, 0.5);
 }
 .product-component-image-container {
   width: 100%;
@@ -99,7 +99,7 @@
   flex-direction: column;
   gap: 6px;
   height: 250px;
-  background-color: #171B26;
+  background-color: #172623;
   border-radius: 0 0 12px 12px;
   padding: 10px;
 }
@@ -170,7 +170,7 @@
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #8347EB;
+  background-color: #408A71;
   cursor: pointer; 
 }
 .add-to-cart-button:active {

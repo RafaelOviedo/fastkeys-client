@@ -10,7 +10,7 @@ export class Footer extends HTMLElement {
         <div class="footer-lists">
           <div class="brand-container">
             <div class="logo-container">
-              <img class="keyboard-image" src="../../assets/images/keyboard-image.png" />
+              <img class="keyboard-image" src="../../assets/images/keyboard-icon-green.png" />
               <span class="footer-logo-text">FastKeys</span>
             </div>
 
