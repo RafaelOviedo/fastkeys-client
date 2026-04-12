@@ -5,52 +5,100 @@
   background-color: #091413;
 }
 
-.hero-section {
+.go-back-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 12px;
+}
+.go-back-button-text {
+  font-size: 16px;
+  text-decoration: none;
+  color: #A6A6A6;
+}
+
+.our-keyboards-title-container {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-keyboards-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+  height: 140px;
+  padding: 10px;
+}
+.search-filter-box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 28px;
-  height: 395px;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/images/keyboards-images/lukas-B8tc3Tq0GK8-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 16px;
+  width: 80%;
+  height: 100%;
+  background-color: #172623;
+  border-radius: 12px;
+  border: 1px solid #2B303B;
 }
-.hero-section-title {
-  width: 287px;
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-}
-.hero-section-description {
-  width: 287px;
-  font-size: 16px;
-  text-align: center;
-  color: #B0E4CC;
-}
-.pill-component {
+.search-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  width: 224px;
-  height: 40px;
-  border-radius: 50px;
-  border: 1px solid #B0E4CC;
-  background-color: rgba(64, 138, 113, 0.2);
+  width: 90%;
+  height: 30%;
 }
-.pill-text {
-  font-weight: bold;
-  font-size: 13px;
+.search-icon {
+  width: 20px;
+  height: 20px;
 }
-.see-all-text {
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #B0E4CC;
+.search-input {
+  width: 80%;
+  height: 90%;
+  border: none;
+  background-color: #101318;
+  border: 1px solid #2B303B;
+  border-radius: 8px;
+  color: #A6A6A6;
+}
+.search-input:focus {
+  outline: 2px solid #408A71;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 30%;
+}
+.filter-icon {
+  width: 20px;
+  height: 20px;
+}
+.filter-select {
+  width: 80%;
+  height: 90%;
+  border: none;
+  background-color: #101318;
+  border: 1px solid #2B303B;
+  border-radius: 8px;
+  color: #A6A6A6;
+}
+.filter-select:focus {
+  outline: 2px solid #408A71;
+}
+option {
+  background-color: #101318;
+  color: #A6A6A6;
+  padding: 10px;
+  font-size: 17px;
 }
 
 .results-title-container {
@@ -74,7 +122,6 @@
 }
 .product-card-component {
   width: 100%;
-  height: 523px;
   border-radius: 12px;
 }
 .product-card-component:hover {
@@ -98,7 +145,8 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  height: 250px;
+  min-height: 225px;
+  height: auto;
   background-color: #172623;
   border-radius: 0 0 12px 12px;
   padding: 10px;
@@ -107,6 +155,11 @@
   font-size: 18px;
   font-weight: bold;
   color: #FFF;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product-description {
   margin: 0;
@@ -186,47 +239,34 @@
   color: #FFF;
 }
 
-/********    DESKTOP    ********/
-
 @media screen and (width > 754px) {
-  .hero-section-title {
+  .go-back-button-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .search-filter-box {
     width: 400px;
   }
-  .hero-section-description {
-    width: 400px;
-  }
-
   .product-cards-container {
     justify-content: flex-start;
   }
   .product-card-component {
     width: 320px;
   }
-
-  .pill-component {
-    width: 280px;
-    height: 50px;
-  }
-  .pill-text {
-    font-size: 16px;
-  }
-  .see-all-text {
-    font-size: 18px;
-  }
 }
 
 @media screen and (width > 1024px) {
-  .hero-section {
-    height: 450px;
+  .go-back-button-container {
+    padding-left: 100px;
+    padding-right: 100px;
   }
-  .hero-section-title {
+  .our-keyboards-title {
+    font-size: 30px;
+  }
+  .search-filter-box {
     width: 500px;
-    font-size: 35px;
   }
-  .hero-section-description {
-    width: 500px;
-    font-size: 20px;
-  }
+
   .product-cards-container {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -234,6 +274,10 @@
 }
 
 @media screen and (width > 1365px) {
+  .go-back-button-container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
   .results-title-container {
     justify-content: center;
   }

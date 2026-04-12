@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./KeyboardsPage.css" rel="stylesheet">
+    <link href="../../assets/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="body">
+    <ek-navbar></ek-navbar>
+    <ek-toast></ek-toast>
+
+    <div class="go-back-button-container">
+      <a class="go-back-button-text" href="../../index.html">&#8592; Go back</a>
+    </div>
+
+    <div class="our-keyboards-title-container">
+      <span class="our-keyboards-title">All our keyboards</span>
+    </div>
+
+    <div class="search-filter-container">
+      <form class="search-filter-box">
+        <div class="search-box">
+          <img class="search-icon" src="../../assets/images/search-icon.png" />
+          <input class="search-input" type="text" placeholder="Search keyboards..." />
+        </div>
+
+        <div class="filter-box">
+          <img class="filter-icon" src="../../assets/images/filter-icon.png" />
+          <select name="select" class="filter-select">
+            <option value="">Filters</option>
+            <option value="name-a-z">Name A-Z</option>
+            <option value="price-low-to-high">Price: Low to high</option>
+            <option value="corne">Corne</option>
+            <option value="lily">Lily58</option>
+            <option value="kinesis">Kinesis</option>
+            <option value="regular">Regular</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="results-title-container">
+      <p class="results-title"></p>
+    </div>
+
+    <div class="spinner hidden"></div>
+
+    <section class="product-cards-container">
+    </section>
+
+    <ek-footer></ek-footer>
+
+    <script type="module" src="../index.js"></script>
+    <script type="module" src="./KeyboardsPage.js"></script>
+  </body>
+</html>
