@@ -1,0 +1,259 @@
+.body {
+  padding: 0;
+  margin: 0;
+  color: #B0E4CC;
+  background-color: #091413;
+}
+
+.contact-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.contact-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.contact-subtitle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 50px 10px;
+}
+.contact-subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #A6A6A6;
+}
+
+.form-get-in-touch-container {
+}
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+.contact-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 570px;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #172623;
+}
+.contact-form-title {
+  color: #FFFFFF;
+  font-size: 26px;
+  margin: 0px;
+}
+.contact-form-subtitle {
+  font-size: 16px;
+  color: #A6A6A6;
+  font-weight: 400;
+  text-align: center;
+}
+
+.fullname-inputs-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  gap: 5px;
+}
+.fullname-input-container {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #A6A6A6;
+}
+.text-input {
+  width: 100%;
+  height: 45%;
+  border: none;
+  background-color: #101318;
+  border: 1px solid #2B303B;
+  border-radius: 5px;
+  color: #A6A6A6;
+}
+.text-input:focus {
+  outline: 2px solid #8347EB;
+}
+.input-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #A6A6A6;
+}
+.textarea-container {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #A6A6A6;
+}
+.textarea-input {
+  width: 100%;
+  height: 60%;
+  border: none;
+  background-color: #101318;
+  border: 1px solid #2B303B;
+  border-radius: 5px;
+  color: #A6A6A6;
+}
+.textarea-input:focus {
+  outline: 2px solid #8347EB;
+}
+
+.checkout-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #408A71;
+  border: none;
+  height: 45px;
+  border-radius: 5px;
+}
+.checkout-button-text {
+  font-size: 16px;
+  color: #FFF;
+}
+.checkout-button-arrow {
+  font-size: 20px;
+  color: #FFF;
+}
+
+.get-in-touch-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+.get-in-touch-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #172623;
+  color: #A6A6A6;
+}
+.get-in-touch-title {
+  color: #FFFFFF;
+  font-size: 26px;
+  margin: 0px;
+}
+
+.get-in-touch-elements-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.elements-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.get-in-touch-element-container {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.get-in-touch-element-label {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+@media screen and (width > 600px) {
+  .get-in-touch-elements-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .get-in-touch-card {
+    height: 300px;
+  }
+}
+
+@media screen and (width > 754px) {
+  .form-get-in-touch-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 850px;
+  }
+
+  .form-container {
+    width: 45%;
+    height: 90%;
+  }
+  .contact-form-container {
+    height: 90%;
+  }
+  .get-in-touch-container {
+    width: 45%;
+    height: 90%;
+  }
+  .get-in-touch-elements-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .get-in-touch-card {
+    height: 60%;
+  }
+}
+
+@media screen and (width > 1024px) {
+
+  .form-container {
+    justify-content: flex-end;
+  }
+  .contact-form-container {
+    width: 80%;
+  }
+
+  .get-in-touch-container {
+    justify-content: flex-start;
+  }
+  .get-in-touch-card {
+    width: 80%;
+  }
+}
+
+@media screen and (width > 1260px) {
+  .get-in-touch-elements-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .get-in-touch-card {
+    height: 300px;
+  }
+}
+
+@media screen and (width > 1365px) {
+}
+
+@media screen and (width > 1440px) {
+}
