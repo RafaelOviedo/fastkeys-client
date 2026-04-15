@@ -1,0 +1,249 @@
+.body {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: #B0E4CC;
+  background-color: #091413;
+}
+
+.go-back-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 12px;
+}
+.go-back-button-text {
+  font-size: 16px;
+  text-decoration: none;
+  color: #A6A6A6;
+}
+
+.image-content-container {}
+.product-details-image-container {
+  height: 390px;
+  padding: 15px;
+}
+.product-details-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.product-details-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 330px;
+  height: auto;
+  padding: 15px;
+}
+.product-details-title {
+  color: #FFF;
+  margin: 0;
+}
+
+.rating-container {
+  width: 235px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+.stars-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  color: #FAB338;
+}
+.star {
+  font-size: 20px;
+  color: #d1d5db;
+}
+.star.filled {
+  color: #eab308;
+}
+.points-text {
+  font-size: 16px;
+  color: #A6A6A6;
+}
+
+.product-details-description {
+  color: #A6A6A6;
+}
+
+.product-details-price {
+  color: #B0E4CC;
+  font-size: 28px;
+  margin: 0;
+}
+
+.add-to-cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #408A71;
+  cursor: pointer; 
+}
+.button-cart-image {
+  width: 22px;
+  height: 22px;
+}
+.add-to-cart-button-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.in-stock-text-container {
+  height: 42px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.check-mark-icon {
+  width: 20px;
+  height: 20px;
+}
+.in-stock-text {
+  color: #41A245;
+  font-size: 14px;
+}
+
+.whats-in-the-box-container {
+  height: 245px;
+  padding: 0 15px 15px 15px;
+}
+
+.whats-in-the-box-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 195px;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #172623;
+}
+.box-title {
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+}
+.box-text {
+  color: #A6A6A6;
+  font-size: 15px;
+}
+.bold {
+  font-weight: bold;
+}
+
+.specifications-container {
+  height: 245px;
+  padding: 15px;
+}
+
+.specifications-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 195px;
+  border-radius: 12px;
+  padding: 24px;
+  gap: 10px;
+  background-color: #172623;
+}
+.specifications-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.left-right-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.left, .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 10px;
+}
+.specifications-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.key-features-container {
+  height: 285px;
+  padding: 0 15px 15px 15px;
+}
+
+.key-features-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 240px;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #172623;
+}
+
+
+@media screen and (width > 754px) {
+  .go-back-button-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (width > 900px) {
+  .image-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .product-image-content-container {
+    width: 50%;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .go-back-button-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (width > 1365px) {
+  .go-back-button-container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (width > 1440px) {
+  .product-image-content-container {
+    width: 40%;
+  }
+}

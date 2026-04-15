@@ -1,0 +1,21 @@
+.body {
+  padding: 0;
+  margin: 0;
+  color: #8347EB;
+  background-color: #101318;
+}
+
+.about-title-container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+.about-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
