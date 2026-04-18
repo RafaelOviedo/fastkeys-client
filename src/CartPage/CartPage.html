@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./CartPage.css" rel="stylesheet">
+    <link href="../../assets/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="body">
+    <ek-navbar></ek-navbar>
+    <ek-toast></ek-toast>
+
+    <div class="go-back-button-container">
+      <a class="go-back-button-text" href="../KeyboardsPage/KeyboardsPage.html">&#8592; Continue shopping</a>
+    </div>
+
+    <div class="cart-title-container">
+      <h2 class="cart-title">Shopping <br> Cart</h2>
+      <span class="items-in-cart">2 items in your cart</span>
+    </div>
+
+    <div class="spinner hidden"></div>
+
+    <section class="cart-products-container">
+    </section>
+
+    <section class="empty-cart-container">
+      <h3>Your cart is empty</h3>
+    </section>
+
+    <section class="summary-container">
+      <div class="summary-box">
+        <span class="order-summary-text">Order Summary</span>
+        <div class="summary-data-container">
+          <div class="data-container">
+            <span class="data-label">Subtotal (2 items)</span>
+            <span class="subtotal-value-text">$259.98</span>
+          </div>
+          <div class="data-container">
+            <span class="data-label">Shipping</span>
+            <span class="shipping-value-text">Free</span>
+          </div>
+          <div class="data-container">
+            <span class="data-label">Tax</span>
+            <span class="tax-value-text">$18.40</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="data-container">
+          <span class="total-text">Total</span>
+          <span class="total-value-text">$278.38</span>
+        </div>
+
+        <button class="checkout-button">
+          <span class="checkout-button-text">Proceed to checkout</span>
+          <span class="checkout-button-arrow">&#8594;</span>
+        </button>
+
+        <span class="secure-text">Secure checkout wirt 256-bit SSL encryption</span>
+      </div>
+    </section>
+
+    <ek-footer></ek-footer>
+
+    <script type="module" src="../index.js"></script>
+    <script type="module" src="./CartPage.js"></script>
+  </body>
+</html>
+
