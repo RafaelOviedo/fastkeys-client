@@ -13,6 +13,8 @@ const { showToast } = useToast();
 const keyboardsProvider = KeyboardsProvider.getInstance();
 const cartProvider = CartProvider.getInstance();
 
+const resultsTitle = document.querySelector('.results-title');
+const pillText = document.querySelector('.pill-text');
 const keyboardsContainer = document.querySelector('.product-cards-container');
 
 let keyboards;
@@ -39,6 +41,9 @@ async function getMainKeyboards() {
     setIsLoading('.product-cards-container')
     keyboards = await keyboardsProvider.getKeyboards();
 
+    resultsTitle.textContent = `Showing ${filteredKeyboards().length ?? 0} results`
+    pillText.textContent = `${filteredKeyboards().length ?? 0} Most sold products below`
+
     renderMainKeyboards();
   }
   catch (error) {
@@ -47,6 +52,10 @@ async function getMainKeyboards() {
   finally {
     removeIsLoading()
   }
+}
+
+function filteredKeyboards() {
+  return keyboards.records.filter((element) => element.fields.rating === 5)
 }
 
 async function addToCart(keyboard) {

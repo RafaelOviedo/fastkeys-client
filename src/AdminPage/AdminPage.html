@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./AdminPage.css" rel="stylesheet">
+    <link href="../../assets/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="body">
+    <ek-navbar></ek-navbar>
+    <ek-toast></ek-toast>
+
+    <div class="admin-title-container">
+      <span class="admin-title">Admin panel</span>
+    </div>
+
+    <div class="spinner hidden"></div>
+
+    <div class="form-and-edit-products-container">
+      <div class="form-container">
+        <form class="contact-form-container">
+          <h1 class="contact-form-title">Create a new product</h1>
+
+          <div class="input-container">
+            <label>Title</label>
+            <input class="text-input title" name="title" type="text" placeholder="Product title..." />
+          </div>
+
+          <div class="input-container">
+            <label>Price</label>
+            <input class="text-input price" name="price" type="number" placeholder="Product price..." />
+          </div>
+
+          <div class="input-container">
+            <label>Image URL</label>
+            <input class="text-input imageSrc" name="imageSrc" type="text" placeholder="Product image url..." />
+          </div>
+
+          <div class="input-container">
+            <label>Category</label>
+            <input class="text-input category" name="category" type="text" placeholder="Product category..." />
+          </div>
+
+          <div class="input-container">
+            <label>Rating</label>
+            <input class="text-input rating" name="rating" type="number" placeholder="Product rating..." />
+          </div>
+
+          <div class="textarea-container">
+            <label>Description</label>
+            <textarea class="textarea-input description" name="description"></textarea>
+          </div>
+
+          <button class="submit-button">
+            <span class="submit-button-text">Create product</span>
+          </button>
+
+          <div class="submit-button-update-container hidden">
+            <button class="submit-button-update">
+              <span class="submit-button-text update-button">Update product</span>
+            </button>
+
+            <button class="cancel-submit-update-button">
+              <span class="cancel-submit-button-update-text">Cancel</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="spinner hidden"></div>
+
+      <section class="product-cards-container">
+
+      </section>
+    </div>
+
+    <ek-footer></ek-footer>
+
+    <script type="module" src="../index.js"></script>
+    <script type="module" src="./ProductForm.js"></script>
+    <script type="module" src="./ExistingProducts.js"></script>
+  </body>
+</html>
